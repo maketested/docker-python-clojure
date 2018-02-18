@@ -1,4 +1,4 @@
-FROM circleci/python:3.6.3-stretch-browsers
+FROM circleci/python:3.6.4-stretch-browsers
 
 # Pipenv
 
