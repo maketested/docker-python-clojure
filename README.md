@@ -1,7 +1,7 @@
 
 [![Build Status](https://travis-ci.org/maketested/docker-python-clojure.svg?branch=master)](https://travis-ci.org/maketested/docker-python-clojure)
 
-# Docker: Python, Pipenv, Firefox, Java, Leiningen
+# Docker: Python, Pipenv, Java, Leiningen, Firefox
 
 To test locally:
 
