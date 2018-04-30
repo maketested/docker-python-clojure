@@ -1,9 +1,5 @@
 FROM circleci/python:3.6.5-stretch-browsers
 
-# System
-
-USER root
-
 # Pipenv
 
 RUN sudo pip install --upgrade pipenv && \

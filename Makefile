@@ -17,4 +17,4 @@ build:
 
 .PHONY: test
 test:
-	docker run -v $(PWD):/host -i $(TAG) bash -c "cp -a /host/. . && make doctor"
+	docker run -v $(PWD):/host -i $(TAG) bash -c "cd ~ && cp -a /host/. . && make doctor"
