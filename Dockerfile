@@ -1,9 +1,18 @@
 FROM circleci/python:3.6.5-stretch-browsers
 
+# Python
+
+RUN sudo pip install --upgrade pip && \
+pip --version
+
 # Pipenv
 
-RUN sudo pip install --upgrade pipenv && \
+RUN sudo pip install pipenv==2018.7.1 && \
 pipenv --version
+
+# Poetry
+RUN sudo pip install poetry==0.11.4 && \
+poetry --version
 
 # Leiningen
 
