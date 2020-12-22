@@ -1,4 +1,4 @@
-FROM circleci/python:3.7.6-stretch-browsers
+FROM circleci/python:3.7.9-browsers
 
 # Python
 
