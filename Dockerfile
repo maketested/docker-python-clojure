@@ -37,5 +37,5 @@ geckodriver --version
 
 # Graphviz
 
-RUN sudo apt install graphviz && \
+RUN sudo apt install graphviz graphviz-dev && \
 dot -V
