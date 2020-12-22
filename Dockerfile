@@ -34,3 +34,8 @@ firefox --version
 RUN curl -L https://github.com/mozilla/geckodriver/releases/download/v0.28.0/geckodriver-v0.28.0-linux64.tar.gz \
 | sudo tar xz -C /usr/local/bin && \
 geckodriver --version
+
+# Graphviz
+
+RUN sudo apt install graphviz && \
+dot -V
