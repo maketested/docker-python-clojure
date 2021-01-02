@@ -1,18 +1,4 @@
-FROM circleci/python:3.7.9-browsers
-
-# Python
-
-RUN sudo pip install --upgrade pip && \
-pip --version
-
-# Pipenv
-
-RUN sudo pip install --upgrade pipenv && \
-pipenv --version
-
-# Poetry
-RUN sudo pip install poetry==1.1.4 && \
-poetry --version
+FROM circleci/python:3.7.9-node-browsers
 
 # Leiningen
 
@@ -39,12 +25,3 @@ geckodriver --version
 
 RUN sudo apt install graphviz graphviz-dev && \
 dot -V
-
-# PhantomJS
-
-ENV OPENSSL_CONF=/etc/ssl/
-
-RUN sudo wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2 && \
-sudo tar xvjf phantomjs-2.1.1-linux-x86_64.tar.bz2 -C /usr/local/share/ && \
-sudo ln -sf /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/local/bin && \
-phantomjs --version
